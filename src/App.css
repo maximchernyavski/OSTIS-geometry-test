@@ -1,0 +1,57 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  offset: 0px;
+  background-color: #ECF7FF;
+}
+
+.plain-text {
+  color: #84B7EE;
+}
+
+.theory-paragraph {
+  max-width: calc(100% - 30px);
+  height: auto;
+  margin-bottom: 5px;
+  color: #7B92DB;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.gradient-text {
+  background-image: linear-gradient(90deg, #7B92DB, #84B7EE);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button {
+  color: #ECF7FF;
+  font-size: 16px;
+  background-color: #84B7EE;
+  border-color: transparent;
+}
+
+.success-button {
+  color: #ECF7FF;
+  font-size: 16px;
+  background-color: #8ACB88;
+  border-color: transparent;
+}
+
+.button:hover {
+  background-color: #1677ff !important;
+  color: white !important;
+}
+
+.side-menu {
+  background-color: #D7EEFF !important;
+  color: #7B92DB !important;
+}
+
+.ant-checkbox-wrapper {
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}

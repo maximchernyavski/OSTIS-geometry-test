@@ -1,0 +1,7 @@
+* * * v. 0.0.1 * * * 
+
+- Model with 0 functionality
+- Raw windows design
+- No responsive layout
+
+* * * * * * * * * * *

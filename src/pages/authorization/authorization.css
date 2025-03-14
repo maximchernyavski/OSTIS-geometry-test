@@ -1,0 +1,39 @@
+.authorization-box {
+    width: 30%;
+    height: 57%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #D7EEFF;
+    border-radius: 12px;
+}
+
+.authorization-title {
+    margin-top: 5px;
+    font-size: 36px;
+    background-image: linear-gradient(90deg, #7B92DB, #84B7EE);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.information-text {
+    cursor: pointer;
+}
+
+.authorization-input {
+    border-color: #84B7EE;
+    background-color: #ECF7FF;
+}
+
+.authorization-input:focus {
+    background-color: #ECF7FF;
+}
+
+.authorization-input:hover {
+    background-color: #ECF7FF;
+}
+
+.ant-form-item-control-input-content input::placeholder { /* Crutch, resolves input placeholder style */
+    color : #84B7EE;
+    opacity: 60%;
+}

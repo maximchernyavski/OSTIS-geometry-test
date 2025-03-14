@@ -1,0 +1,24 @@
+#profile-main {
+    width: 70%;
+    min-height: 100%;
+    background-color: #D7EEFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-in-circle {
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 10px solid #84B7EE;
+    border-radius: 50%;
+}
+
+.data-in-circle-under-text {
+    font-size: 20px;
+    margin-top: 15px;
+}

@@ -1,0 +1,69 @@
+.theory-tests-problems-main {
+    width: 70%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #D7EEFF;
+}
+
+.theory-tests-problems-header {
+    width: 100%;
+    min-height: 6.5%;
+    display: flex;
+}
+
+.theory-tests-problems-tab-names {
+    font-size: 26px;
+    line-height: 20px;
+    text-shadow: none !important;
+}
+
+.theory-tests-problems-tabs-content {
+    width: 67vw;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #84B7EE;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.theory-logo-box {
+    width: 100%;
+    height: 6.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #84B7EE;
+}
+
+.test-question-box {
+    max-width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ECF7FF;
+    border: 2px solid #84B7EE;
+    border-radius: 20px; 
+}
+
+.test-question-item {
+    width: 90%;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    background-color: white;
+    color: #45A8FF;
+    font-size: 20px;
+}
+
+.test-question-item:active {
+    background-color: #D7EEFF;
+}
+
+.test-question-item.ant-radio-wrapper-checked {
+    background-color: #D7EEFF !important;
+}
