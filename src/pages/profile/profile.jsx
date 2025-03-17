@@ -17,7 +17,7 @@ function Profile() {
             <div id='profile-main' className='middle-column'>
                 <div style={{height: '19%', width: '100%', display:'flex', marginLeft: '20%', marginTop: '5%'}}>
                     <Avatar icon={<UserOutlined />} alt='User avatar' size={153.75} style={{marginRight: '10px'}} />
-                    <div style={{width: '70%', height: '100%', display: 'flex', flexDirection: 'column'}}>
+                    <div id='avatar-side-data'>
                         <Text strong className='plain-text' style={{fontSize: '64px', lineHeight: '50px'}}>Alica Bobovna</Text>
                         <span>
                         <Avatar size={64} icon={<MailOutlined />} style={{color: '#84B7EE', backgroundColor: 'transparent'}} />
@@ -26,19 +26,19 @@ function Profile() {
                     </div>
                 </div>
                 <div style={{width: '100%', height: '60%', display: 'flex', alignItems: 'center', justifyContent: 'space-around'}}>
-                    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    <div className='data-in-circle-box'>
                         <div className='data-in-circle'>
                             <Text strong className='plain-text' style={{fontSize: '60px'}} >52</Text>
                         </div>
                         <Text strong className='plain-text data-in-circle-under-text' >Пройдено тестов</Text>
                     </div>
-                    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    <div className='data-in-circle-box'>
                         <div className='data-in-circle'>
                             <Text strong className='plain-text' style={{fontSize: '60px'}} >69</Text>
                         </div>
                         <Text strong className='plain-text data-in-circle-under-text' >Заработано баллов</Text>
                     </div>
-                    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    <div className='data-in-circle-box'>
                         <div className='data-in-circle'>
                             <Text strong className='plain-text' style={{fontSize: '60px'}} >9:11</Text>
                         </div>
