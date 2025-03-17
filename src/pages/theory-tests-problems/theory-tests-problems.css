@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: space-between;
     border: 1px solid #84B7EE;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -64,6 +64,7 @@
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 10px;
     background-color: #ECF7FF;
     border: 2px solid #84B7EE;
     border-radius: 20px; 

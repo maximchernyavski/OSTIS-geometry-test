@@ -64,6 +64,7 @@
   border-color: transparent;
 }
 
+.button:active,
 .button:hover {
   background-color: #1677ff !important;
   color: white !important;

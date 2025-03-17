@@ -134,11 +134,13 @@ function Test1 () {
                         </Form.Item>
                     </div>
 
-                    <Form.Item label=''>
-                        <Button type='primary' htmlType='Submit' className='button'>
-                            Закончить
-                        </Button>
-                    </Form.Item>
+                    <div style={{width: '100%', display: 'flex', flexDirection: 'row-reverse'}}>
+                        <Form.Item label=''>
+                            <Button type='primary' htmlType='Submit' className='button'>
+                                Закончить
+                            </Button>
+                        </Form.Item>
+                    </div>
                 </Form>
             </div>
         </div>

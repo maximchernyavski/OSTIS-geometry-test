@@ -3,7 +3,7 @@ import Logo from '../../../../../media/OSTIS-geometry.svg';
 import '../../../theory-tests-problems.css';
 import { Typography, Anchor, Button } from 'antd';
 import pic1 from './pic1.png'
-import { DefinitionBlock, TheoremBlock, ProofBlock, AxiomBlock } from '../../../theory-tests-probles';
+import { DefinitionBlock, TheoremBlock, ProofBlock, AxiomBlock } from '../../../theory-tests-problems';
 import { useNavigate } from 'react-router';
 const { Text, Paragraph } = Typography;
 
