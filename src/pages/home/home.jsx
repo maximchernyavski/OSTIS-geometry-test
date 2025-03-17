@@ -30,31 +30,25 @@ function Home () {
         onClick: () => {navigate('/profile')},
       },
       {
-        key: '3',
-        label: (
-          <Text strong className='plain-text' style={{fontSize: '16px'}}>Баланс остиков</Text>
-        ),
-      },
-      {
-          key: '4',
+          key: '3',
           label: (
             <Text strong className='plain-text' style={{fontSize: '16px'}}>Баланс остиков</Text>
           ),
       },
       {
-          key: '5',
+          key: '4',
           label: (
             <Text strong className='plain-text' style={{fontSize: '16px'}}>Настройки</Text>
           ),
       },
       {
-          key: '6',
+          key: '5',
           label: (
             <Text strong className='plain-text' style={{fontSize: '16px'}}>Помощь</Text>
           ),
       },
       {
-          key: '7',
+          key: '6',
           label: (
               <div style={{display: 'flex', justifyContent: 'center'}}>
                   <Button className='button' style={{borderColor: 'transparent'}} onClick={() => {navigate('/')}}>
@@ -124,7 +118,7 @@ function Home () {
                         dropdownRender={(menu) => (
                           <div style={{width: '8vw'}}>
                                 {cloneElement(menu, {
-                                    style: {backgroundColor: '#D7EEFF', border: '2px solid #84B7EE', display: 'flex', flexDirection: 'column', alignItems: 'center'}
+                                    className: 'home-dropdown-menu',
                                 })}
                           </div>  
                         )}>
@@ -139,7 +133,8 @@ function Home () {
                             dropdownRender={(menu) => (
                                 <div style={{width: '20vw', height: '20vh', marginTop: '10px'}}>
                                     {cloneElement(menu, {
-                                        style: {backgroundColor: '#D7EEFF', border: '1px solid #7B92DB'},
+                                        className: 'home-dropdown-menu',
+                                        style: {border: '1px solid #7B92DB', alignItems: 'normal'},
                                     })}
                                 </div>)}
                             trigger={['click']}

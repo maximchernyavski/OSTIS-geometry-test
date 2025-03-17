@@ -36,6 +36,29 @@
     border-bottom: 1px solid #84B7EE;
 }
 
+.theory-block-box {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+
+.theory-definition {
+    background-color: #84B7EE;
+}
+
+.theory-theorem {
+    background-color: #7B92DB;
+}
+
+.theory-proof {
+    background-color: #6F60C1;
+}
+
+.theory-axiom {
+    background-color: #9489D1;
+}
+
 .test-question-box {
     max-width: 100%;
     margin-left: 10px;
