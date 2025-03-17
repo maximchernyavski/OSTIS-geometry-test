@@ -16,7 +16,7 @@ function Profile() {
             </div>
             <div id='profile-main' className='middle-column'>
                 <div style={{height: '19%', width: '100%', display:'flex', marginLeft: '20%', marginTop: '5%'}}>
-                    <Avatar icon={<UserOutlined />} alt='User avatar' size={153.75} style={{marginRight: '10px'}} />
+                    <Avatar icon={<UserOutlined />} alt='User avatar' size={153.75} style={{marginRight: '10px', cursor: 'pointer'}} />
                     <div id='avatar-side-data'>
                         <Text strong className='plain-text' style={{fontSize: '64px', lineHeight: '50px'}}>Alica Bobovna</Text>
                         <span>

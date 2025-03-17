@@ -139,7 +139,7 @@ function Home () {
                                 </div>)}
                             trigger={['click']}
                         >
-                            <Avatar icon={<UserOutlined />} alt='User avatar' size={'large'}></Avatar>
+                            <Avatar icon={<UserOutlined />} alt='User avatar' size={'large'} style={{cursor: 'pointer'}}></Avatar>
                         </Dropdown>
                 </div>
             </div>

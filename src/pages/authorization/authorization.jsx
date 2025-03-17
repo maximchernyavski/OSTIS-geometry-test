@@ -15,7 +15,7 @@ function Authorization () {
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <Text strong className='authorization-title'>Sign Up</Text>
                 <Text strong className='plain-text' style={{marginBottom: '20px'}}>
-                    Already have an account?
+                    {'Already have an account?  '}
                     <Text strong underline className='plain-text information-text' onClick={() => {setCurrentMode(1)}}>Log In</Text>
                 </Text>
             </div>
@@ -27,7 +27,7 @@ function Authorization () {
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <Text strong className='authorization-title'>Log In</Text>
                 <Text strong className='plain-text' style={{marginBottom: '20px'}}>
-                    Don't have an account?
+                    {"Don't have an account?  "}  
                     <Text strong underline className='plain-text information-text' onClick={() => {setCurrentMode(0)}}>Sign Up</Text>
                 </Text>
             </div>
