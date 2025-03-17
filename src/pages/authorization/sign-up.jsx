@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 import { Button, Form, Input } from 'antd';
-import { useNavigate } from "react-router";
+import { useNavigate } from 'react-router';
 
 function SignUp () {
     const navigate = useNavigate()
@@ -15,7 +15,7 @@ function SignUp () {
 
     return (
         <Form
-            name="basic"
+            name='basic'
             labelCol={{
                 span: 8,
             }}
@@ -31,10 +31,10 @@ function SignUp () {
             }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
-            autoComplete="off"
+            autoComplete='off'
         >
             <Form.Item
-                name="username"
+                name='username'
                 rules={[
                     {
                     required: true,
@@ -42,11 +42,11 @@ function SignUp () {
                     },
                 ]}
             >
-                <Input placeholder="Name" className='authorization-input plain-text'/>
+                <Input placeholder='Name' className='authorization-input plain-text'/>
             </Form.Item>
 
             <Form.Item
-                name="email"
+                name='email'
                 rules={[
                     {
                     required: true,
@@ -58,11 +58,11 @@ function SignUp () {
                     }
                 ]}
             >
-                <Input placeholder="Email" className='authorization-input plain-text'/>
+                <Input placeholder='Email' className='authorization-input plain-text'/>
             </Form.Item>
 
             <Form.Item
-                name="password"
+                name='password'
                 rules={[
                     {
                     required: true,
@@ -70,11 +70,11 @@ function SignUp () {
                     },
                 ]}
             >
-                <Input.Password placeholder="Password" className='authorization-input plain-text'/>
+                <Input.Password placeholder='Password' className='authorization-input plain-text'/>
             </Form.Item>
 
             <Form.Item label={null} style={{display: 'flex', flexDirection: 'column-reverse', alignItems: 'center'}}>
-                <Button type="primary" htmlType="submit" className="button" style={{marginLeft: '-16px'}}>
+                <Button type='primary' htmlType='submit' className='button' style={{marginLeft: '-16px'}}>
                 Submit
                 </Button>
             </Form.Item>

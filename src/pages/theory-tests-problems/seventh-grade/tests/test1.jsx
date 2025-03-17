@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react'
 import { Typography, Form, Radio, Checkbox, Input, Button } from 'antd'
 import Logo from '../../../../media/OSTIS-geometry.svg'
 import '../../theory-tests-problems.css'
-import { useNavigate } from "react-router"
+import { useNavigate } from 'react-router'
 const { Text } = Typography
 
 const question2Values = [
@@ -32,15 +32,15 @@ function Test1 () {
 
     return (
         <div style={{width: '100%', height: '100%', display: 'flex', overflowX: 'hidden'}}>
-            <div style={{width: '15%', minHeight: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <img src={Logo} alt="OSTIS-geometry logo" style={{maxWidth: '60%', marginLeft: '5%', cursor: 'pointer'}} onClick={() => {navigate('/home')}}></img>
+            <div className='side-column'>
+                <img src={Logo} alt='OSTIS-geometry logo' className='logo' style={{cursor: 'pointer'}} onClick={() => {navigate('/home')}}></img>
                 {/* <div style={{height: '70%', display: 'flex', flexDirection: 'column-reverse'}}>  
-                    <Button className="button" style={{width: '90%', marginTop: '100%', fontSize: '14px'}}>Назад к выбору темы</Button>
+                    <Button className='button' style={{width: '90%', marginTop: '100%', fontSize: '14px'}}>Назад к выбору темы</Button>
                 </div> */}
             </div>
-            <div className="theory-tests-problems-main" style={{backgroundColor: '#D7EEFF'}}>
-                <div className="theory-tests-problems-header" style={{borderBottom: '1px solid #84B7EE'}}>
-                    <Text strong className="gradient-text" style={{fontSize: '36px', marginLeft: '15px'}}>1. Прямая, луч, отрезок. Ломанная</Text>
+            <div className='theory-tests-problems-main middle-column' style={{backgroundColor: '#D7EEFF'}}>
+                <div className='theory-tests-problems-header' style={{borderBottom: '1px solid #84B7EE'}}>
+                    <Text strong className='gradient-text' style={{fontSize: '36px', marginLeft: '15px'}}>1. Прямая, луч, отрезок. Ломанная</Text>
                 </div>
                 <Form
                 name='test-form-checkboxes'
@@ -49,7 +49,7 @@ function Test1 () {
                 scrollToFirstError={true}
                 style={{width: '95%'}}
                 >
-                    <div className="test-question-box">
+                    <div className='test-question-box'>
                         <Text style={{marginLeft: '5px', fontSize: '24px', color: '#4470FB'}}>question1</Text>
                         <Form.Item
                                 label='Выберите правильный вариант ответа:'
@@ -66,7 +66,7 @@ function Test1 () {
                         </Form.Item>
                     </div>
                     
-                    <div className="test-question-box">
+                    <div className='test-question-box'>
                         <Text style={{marginLeft: '5px', fontSize: '24px', color: '#4470FB'}}>question2</Text>
                         <Form.Item
                             label='Выберите правильные варианты ответа:'
@@ -83,7 +83,7 @@ function Test1 () {
                         </Form.Item>
                     </div>
 
-                    <div className="test-question-box">
+                    <div className='test-question-box'>
                         <Text style={{marginLeft: '5px', fontSize: '24px', color: '#4470FB'}}>question3</Text>
                         <Form.Item
                             label='Напишите свой вариант ответа:'
@@ -92,11 +92,11 @@ function Test1 () {
                                 {required: true, message: 'Вопрос обязателен'},
                             ]}
                             >
-                            <Input.TextArea label='Введите свой ответ' className="test-question-item" style={{marginLeft: '10px'}} autoSize />
+                            <Input.TextArea label='Введите свой ответ' className='test-question-item' style={{marginLeft: '10px'}} autoSize />
                         </Form.Item>
                     </div>
 
-                    <div className="test-question-box">
+                    <div className='test-question-box'>
                         <Text style={{marginLeft: '5px', fontSize: '24px', color: '#4470FB'}}>question4</Text>
                         <Form.Item
                                 label='Выберите правильный вариант ответа:'
@@ -110,7 +110,7 @@ function Test1 () {
                         </Form.Item>
                     </div>
                     
-                    <div className="test-question-box">
+                    <div className='test-question-box'>
                         <Text style={{marginLeft: '5px', fontSize: '24px', color: '#4470FB'}}>question5</Text>
                         <Form.Item
                             label='Выберите правильные варианты ответа:'
@@ -124,18 +124,18 @@ function Test1 () {
                         </Form.Item>
                     </div>
 
-                    <div className="test-question-box">
+                    <div className='test-question-box'>
                         <Text style={{marginLeft: '5px', fontSize: '24px', color: '#4470FB'}}>question6</Text>
                         <Form.Item
                             label='Напишите свой вариант ответа:'
                             name='question6'
                             >
-                            <Input.TextArea label='Введите свой ответ' className="test-question-item" style={{marginLeft: '10px'}} autoSize />
+                            <Input.TextArea label='Введите свой ответ' className='test-question-item' style={{marginLeft: '10px'}} autoSize />
                         </Form.Item>
                     </div>
 
                     <Form.Item label=''>
-                        <Button type="primary" htmlType="Submit" className="button">
+                        <Button type='primary' htmlType='Submit' className='button'>
                             Закончить
                         </Button>
                     </Form.Item>

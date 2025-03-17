@@ -10,6 +10,31 @@
   color: #84B7EE;
 }
 
+.header-logo {
+  height: 100%;
+  margin-left: 4%;
+}
+
+.logo {
+  width: 10vw;
+}
+
+.side-column {
+  width: 15%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle-column {
+  width: 70%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .theory-paragraph {
   max-width: calc(100% - 30px);
   height: auto;

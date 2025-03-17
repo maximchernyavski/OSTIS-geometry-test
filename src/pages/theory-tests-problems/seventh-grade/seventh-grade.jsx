@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 import Logo from '../../../media/OSTIS-geometry.svg';
 import '../theory-tests-problems.css';
-import { Tabs ,Typography } from "antd";
-import { theory, tests, problems } from "./seventh-grade-data";
-import { useNavigate } from "react-router";
+import { Tabs ,Typography } from 'antd';
+import { theory, tests, problems } from './seventh-grade-data';
+import { useNavigate } from 'react-router';
 const { Text } = Typography
 
 const tabsItems = [
@@ -29,11 +29,11 @@ function SeventhGradeTTP () {
 
     return (
         <div style={{width: '100%', height: '100%', display: 'flex', overflowX: 'hidden'}}>
-            <div style={{width: '15%', minHeight: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <img src={Logo} alt="OSTIS-geometry logo" style={{width: '45%', marginLeft: '5%', cursor: 'pointer'}} onClick={() => {navigate('/home')}}></img>
+            <div className='side-column'>
+                <img src={Logo} alt='OSTIS-geometry logo' className='logo' style={{cursor: 'pointer'}} onClick={() => {navigate('/home')}}></img>
             </div>
-            <div className="theory-tests-problems-main">
-                <div className="theory-tests-problems-header" style={{width: 'auto'}}>
+            <div className='theory-tests-problems-main middle-column'>
+                <div className='theory-tests-problems-header' style={{width: 'auto'}}>
                     <Tabs items={tabsItems} ></Tabs>
                 </div>
             </div>

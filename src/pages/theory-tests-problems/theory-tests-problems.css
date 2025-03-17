@@ -1,9 +1,4 @@
 .theory-tests-problems-main {
-    width: 70%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #D7EEFF;

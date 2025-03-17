@@ -1,10 +1,10 @@
-import { cloneElement, React } from "react";
+import { cloneElement, React } from 'react';
 import Logo from '../../media/OSTIS-geometry.svg'
 import GeometryPicture from '../../media/OSTIS-geometry-placeholder.png'
 import './home.css'
-import { Avatar, Button, Dropdown, Typography, Divider } from "antd";
-import { UserOutlined } from "@ant-design/icons";
-import { useNavigate } from "react-router";
+import { Avatar, Button, Dropdown, Typography, Divider } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router';
 const { Text, Paragraph } = Typography
 
 function Home () {
@@ -16,8 +16,8 @@ function Home () {
         label: (
           <div>
               <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} onClick={(e) => e?.stopPropagation()} >
-                  <Avatar icon={<UserOutlined />} alt="User avatar" size={91}></Avatar>
-                  <Text strong className="plain-text" style={{fontSize: '16px'}}>Alica Bobovna</Text>
+                  <Avatar icon={<UserOutlined />} alt='User avatar' size={91}></Avatar>
+                  <Text strong className='plain-text' style={{fontSize: '16px'}}>Alica Bobovna</Text>
               </div>
           </div>
         ),
@@ -25,39 +25,39 @@ function Home () {
       {
         key: '2',
         label: (
-          <Text strong className="plain-text" style={{fontSize: '16px'}}>Профиль</Text>
+          <Text strong className='plain-text' style={{fontSize: '16px'}}>Профиль</Text>
         ),
         onClick: () => {navigate('/profile')},
       },
       {
         key: '3',
         label: (
-          <Text strong className="plain-text" style={{fontSize: '16px'}}>Баланс остиков</Text>
+          <Text strong className='plain-text' style={{fontSize: '16px'}}>Баланс остиков</Text>
         ),
       },
       {
           key: '4',
           label: (
-            <Text strong className="plain-text" style={{fontSize: '16px'}}>Баланс остиков</Text>
+            <Text strong className='plain-text' style={{fontSize: '16px'}}>Баланс остиков</Text>
           ),
       },
       {
           key: '5',
           label: (
-            <Text strong className="plain-text" style={{fontSize: '16px'}}>Настройки</Text>
+            <Text strong className='plain-text' style={{fontSize: '16px'}}>Настройки</Text>
           ),
       },
       {
           key: '6',
           label: (
-            <Text strong className="plain-text" style={{fontSize: '16px'}}>Помощь</Text>
+            <Text strong className='plain-text' style={{fontSize: '16px'}}>Помощь</Text>
           ),
       },
       {
           key: '7',
           label: (
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                  <Button className="button" style={{borderColor: 'transparent'}} onClick={() => {navigate('/')}}>
+                  <Button className='button' style={{borderColor: 'transparent'}} onClick={() => {navigate('/')}}>
                     <Text strong style={{color: '#ECF7FF', fontSize: '16px'}}>Выйти</Text>
                   </Button>
               </div>
@@ -115,12 +115,12 @@ function Home () {
 
     return (
         <div style={{width: '100%', height: '100%', overflowY: 'hidden', overflowX: 'hidden'}}>
-            <div id="home-header">
-                <div className="header-half">
-                    <img src={Logo} style={{height: '100%', marginLeft: '4%', marginRight: '4%'}} alt="OSTIS-geometry logo"></img>
+            <div id='home-header'>
+                <div className='header-half'>
+                    <img src={Logo} className='header-logo' alt='OSTIS-geometry logo'></img>
                     <Dropdown
                         menu={{items: theoryDropdownItems}}
-                        placement="bottom"
+                        placement='bottom'
                         dropdownRender={(menu) => (
                           <div style={{width: '8vw'}}>
                                 {cloneElement(menu, {
@@ -128,14 +128,14 @@ function Home () {
                                 })}
                           </div>  
                         )}>
-                        <Button className="button header-button"><Text strong style={{color: '#ECF7FF', fontSize: '16px'}}>Теория</Text></Button>
+                        <Button className='button header-button'><Text strong style={{color: '#ECF7FF', fontSize: '16px'}}>Теория</Text></Button>
                     </Dropdown>
-                    <Button className="button header-button"><Text strong style={{color: '#ECF7FF', fontSize: '16px'}}>Холст</Text></Button>
+                    <Button className='button header-button'><Text strong style={{color: '#ECF7FF', fontSize: '16px'}}>Холст</Text></Button>
                 </div>
-                <div className="header-half" style={{flexDirection: 'row-reverse', marginRight: '15px'}} >
+                <div className='header-half' style={{flexDirection: 'row-reverse', marginRight: '15px'}} >
                         <Dropdown
                             menu={{ items: profileDropdownItems }}
-                            placement="bottom"
+                            placement='bottom'
                             dropdownRender={(menu) => (
                                 <div style={{width: '20vw', height: '20vh', marginTop: '10px'}}>
                                     {cloneElement(menu, {
@@ -144,16 +144,16 @@ function Home () {
                                 </div>)}
                             trigger={['click']}
                         >
-                            <Avatar icon={<UserOutlined />} alt="User avatar" size={"large"}></Avatar>
+                            <Avatar icon={<UserOutlined />} alt='User avatar' size={'large'}></Avatar>
                         </Dropdown>
                 </div>
             </div>
-            <div id="home-main">
-                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '15px', maxWidth: '60%'}}>
+            <div id='home-main'>
+                <div style={{maxWidth: '60%', display: 'flex', flexDirection: 'column'}}>
                     <Text strong className='gradient-text' style={{fontSize: '50px'}}>
                         Добро пожаловать на OSTIS geometry
                     </Text>
-                    <Text strong className="plain-text" style={{ fontSize: '36px', lineHeight: '40px', whiteSpace: 'pre-line'}}>
+                    <Text strong className='plain-text' style={{ fontSize: '36px', lineHeight: '40px', whiteSpace: 'pre-line'}}>
                         {`интеллектуальная платформа\nдля обучения`}
                     </Text>
                     <Paragraph strong ellipsis={{rows:4, defaultExpanded: true}} style={{width: '70%', marginTop: '10px', color: '#7B92DB', fontSize: '20px', lineHeight: '20px'}}>
@@ -163,7 +163,7 @@ function Home () {
                       программы РБ по геометрии
                     </Paragraph>
                 </div>
-                <img src={GeometryPicture} alt="OSTIS geometry placeholder" style={{width: '30%', marginRight: '15px'}}></img>
+                <img src={GeometryPicture} alt='OSTIS geometry placeholder' style={{width: '30%', marginRight: '15px'}}></img>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import { ConfigProvider } from 'antd';
-import { BrowserRouter ,Route, Routes } from "react-router";
+import { BrowserRouter ,Route, Routes } from 'react-router';
 import './App.css';
 import '@fontsource/asap'
 import Test1 from './pages/theory-tests-problems/seventh-grade/tests/test1';
@@ -11,7 +11,7 @@ import Home from './pages/home/home';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <ConfigProvider
         theme={{
             components: {

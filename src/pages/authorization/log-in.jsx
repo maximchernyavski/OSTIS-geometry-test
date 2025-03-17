@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 import { Button, Switch, Form, Input, Typography } from 'antd';
-import { useNavigate } from "react-router";
+import { useNavigate } from 'react-router';
 
 function LogIn () {
     const navigate = useNavigate()
@@ -15,7 +15,7 @@ function LogIn () {
 
     return (
         <Form
-            name="basic"
+            name='basic'
             labelCol={{
                 span: 8,
             }}
@@ -31,10 +31,10 @@ function LogIn () {
             }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
-            autoComplete="off"
+            autoComplete='off'
         >
             <Form.Item
-                name="username"
+                name='username'
                 rules={[
                     {
                     required: true,
@@ -42,11 +42,11 @@ function LogIn () {
                     },
                 ]}
             >
-                <Input placeholder="Name" className='authorization-input plain-text'/>
+                <Input placeholder='Name' className='authorization-input plain-text'/>
             </Form.Item>
 
             <Form.Item
-                name="password"
+                name='password'
                 rules={[
                     {
                     required: true,
@@ -54,18 +54,18 @@ function LogIn () {
                     },
                 ]}
             >
-                <Input.Password placeholder="Password" className='authorization-input plain-text'/>
+                <Input.Password placeholder='Password' className='authorization-input plain-text'/>
             </Form.Item>
 
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'baseline',}}>
                 <Typography.Text className='plain-text'>Remember me</Typography.Text>
-                <Form.Item name="remember" valuePropName="checked" label={null}>
+                <Form.Item name='remember' valuePropName='checked' label={null}>
                     <Switch checked={false}/>
                 </Form.Item>
             </div>
 
             <Form.Item label={null} style={{display: 'flex', flexDirection: 'column-reverse', alignItems: 'center'}}>
-                <Button type="primary" htmlType="submit" className="button" style={{marginLeft: '-16px'}}>
+                <Button type='primary' htmlType='submit' className='button' style={{marginLeft: '-16px'}}>
                 Submit
                 </Button>
             </Form.Item>

@@ -1,5 +1,5 @@
 .authorization-box {
-    width: 30%;
+    width: 20%;
     height: 57%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
 }
 
 .authorization-title {
-    margin-top: 5px;
+    margin-top: 20px;
     font-size: 36px;
     background-image: linear-gradient(90deg, #7B92DB, #84B7EE);
     background-clip: text;
