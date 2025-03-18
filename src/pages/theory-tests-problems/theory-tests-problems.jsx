@@ -24,28 +24,28 @@ export function TTPTabContent (props) {
 }
 
 export function TheoryDTPABlock (props) {
-    if ('definition' in props) {
+    if (props.definition) {
         return (
             <div id={props.id || ''} className='theory-block-box theory-definition'>
                 <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Определение. ' + props.children}</Text>
             </div>
         )
     }
-    if ('theorem' in props) {
+    if (props.theorem) {
         return (
             <div id={props.id || ''} className='theory-block-box theory-theorem'>
                 <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Теорема. ' + props.children}</Text>
             </div>
         )
     }
-    if ('proof' in props) {
+    if (props.proof) {
         return (
             <div id={props.id || ''} className='theory-block-box theory-proof'>
                 <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Доказательство. ' + props.children}</Text>
             </div>
         ) 
     }
-    if ('axiom' in props) {
+    if (props.axiom) {
         return (
             <div id={props.id || ''} className='theory-block-box theory-axiom'>
                 <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Аксиома. ' + props.children}</Text>
