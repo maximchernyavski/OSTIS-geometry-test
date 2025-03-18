@@ -1,100 +1,48 @@
 import React from 'react';
-import { Button, Typography } from 'antd'
-import { useNavigate } from 'react-router';
-
-function Theme1Link () {
-    const navigate = useNavigate()
-
-    return (
-        <div className='theory-tests-problems-tabs-content' >
-            <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}} onClick={() => {navigate('theme1')}}>Изучить</Button>
-        </div>
-    )
-}
-
-function Test1Link () {
-    const navigate = useNavigate()
-
-    return (
-        <div className='theory-tests-problems-tabs-content' >
-            <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-            <div style={{display: 'flex', alignItems: 'center'}}>
-                <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-                <Button className='button' style={{marginRight: '10px'}} onClick={() => {navigate('test1')}}>Сдать</Button>
-            </div>
-        </div>
-    )
-}
+import { TTPTabContent } from '../theory-tests-problems';
 
 export const theory = [
     (
-        <Theme1Link />
+        <TTPTabContent key={1} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={2} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={3} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={4} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={5} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={6} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={7} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={8} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={9} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={10} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={11} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={12} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={13} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <Button className='button' style={{marginRight: '10px'}}>Изучить</Button>
-    </div>
+    (
+        <TTPTabContent key={14} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Изучить' path='theme1' />
     ),
 ]
 
@@ -102,388 +50,173 @@ export const theory = [
 
 export const tests = [
     (
-        <Test1Link />
+        <TTPTabContent key={1} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:10/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={2} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={3} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={4} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={5} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={6} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={7} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:10/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={8} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={9} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={10} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={11} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={12} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={13} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:10/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={14} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={15} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={16} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={17} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={18} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={19} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:10/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={20} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={21} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={22} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={23} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={24} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={25} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:10/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={26} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={27} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={28} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={29} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={30} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={31} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:10/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={32} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={33} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={34} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={35} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={36} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={37} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:10/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={38} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={39} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={40} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:*/10</Typography.Text>
-            <Button className='button' style={{marginRight: '10px'}}>Сдать</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={41} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Typography.Text strong className='plain-text ' style={{marginRight: '10px'}}>Оценка:7/10</Typography.Text>
-            <Button className='success-button' style={{marginRight: '10px'}}>Сдано</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={42} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
+    ),
+    (
+        <TTPTabContent key={43} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
+    ),
+    (
+        <TTPTabContent key={44} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
+    ),
+    (
+        <TTPTabContent key={45} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
+    ),
+    (
+        <TTPTabContent key={46} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='7' completed={true} path='test1' />
+    ),
+    (
+        <TTPTabContent key={47} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдать' grade='*' path='test1' />
+    ),
+    (
+        <TTPTabContent key={48} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Сдано' grade='10' completed={true} path='test1' />
     ),
 ]
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 export const problems = [
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Button className='button' style={{marginRight: '10px'}}>Решить</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={1} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Решить' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Button className='success-button' style={{marginRight: '10px'}}>Решено</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={1} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Решено' completed={true} />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Button className='button' style={{marginRight: '10px'}}>Решить</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={1} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Решить' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Button className='success-button' style={{marginRight: '10px'}}>Решено</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={1} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Решено' completed={true} />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Button className='success-button' style={{marginRight: '10px'}}>Решено</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={1} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Решено' completed={true} />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Button className='button' style={{marginRight: '10px'}}>Решить</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={1} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Решить' />
     ),
-    (<div className='theory-tests-problems-tabs-content' >
-        <Typography.Text strong className='plain-text' style={{marginLeft: '10px', fontSize: '20px'}} >1. Прямая, луч, отрезок. Ломанная.</Typography.Text>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-            <Button className='button' style={{marginRight: '10px'}}>Решить</Button>
-        </div>
-    </div>
+    (
+        <TTPTabContent key={1} title='1. Прямая, луч, отрезок. Ломанная.' buttonTitle='Решить' />
     ),
 ]
