@@ -23,34 +23,33 @@ export function TTPTabContent (props) {
     )
 }
 
-export function DefinitionBlock (props) {
-    return (
-        <div id={props.id || ''} className='theory-block-box theory-definition'>
-            <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Определение. ' + props.children}</Text>
-        </div>
-    )
-}
-
-export function TheoremBlock (props) {
-    return (
-        <div id={props.id || ''} className='theory-block-box theory-theorem'>
-            <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Теорема. ' + props.children}</Text>
-        </div>
-    )
-}
-
-export function ProofBlock (props) {
-    return (
-        <div id={props.id || ''} className='theory-block-box theory-proof'>
-            <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Доказательство. ' + props.children}</Text>
-        </div>
-    )
-}
-
-export function AxiomBlock (props) {
-    return (
-        <div id={props.id || ''} className='theory-block-box theory-axiom'>
-            <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Аксиома. ' + props.children}</Text>
-        </div>
-    )
+export function TheoryDTPABlock (props) {
+    if ('definition' in props) {
+        return (
+            <div id={props.id || ''} className='theory-block-box theory-definition'>
+                <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Определение. ' + props.children}</Text>
+            </div>
+        )
+    }
+    if ('theorem' in props) {
+        return (
+            <div id={props.id || ''} className='theory-block-box theory-theorem'>
+                <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Теорема. ' + props.children}</Text>
+            </div>
+        )
+    }
+    if ('proof' in props) {
+        return (
+            <div id={props.id || ''} className='theory-block-box theory-proof'>
+                <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Доказательство. ' + props.children}</Text>
+            </div>
+        ) 
+    }
+    if ('axiom' in props) {
+        return (
+            <div id={props.id || ''} className='theory-block-box theory-axiom'>
+                <Text style={{fontSize: '16px', lineHeight: '20px', color: '#ECF7FF'}}>{'Аксиома. ' + props.children}</Text>
+            </div>
+        )
+    }
 }
