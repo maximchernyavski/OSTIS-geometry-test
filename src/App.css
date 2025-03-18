@@ -71,6 +71,12 @@
   color: white !important;
 }
 
+.success-button:active,
+.success-button:hover {
+  background-color: #66BB63 !important;
+  color: white !important;
+}
+
 .side-menu {
   background-color: #D7EEFF !important;
   color: #7B92DB !important;

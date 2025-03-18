@@ -1,4 +1,4 @@
-import React from 'react';
+import { React } from 'react';
 import Logo from '../../../media/OSTIS-geometry.svg';
 import '../theory-tests-problems.css';
 import { Tabs ,Typography } from 'antd';
