@@ -7,8 +7,11 @@ import { useNavigate } from 'react-router';
 const { Text } = Typography
 
 function Profile() {
-    const navigate = useNavigate()
-
+    const navigate = useNavigate();
+    let passedTestsAmount = 52;
+    let totalScore = 69;
+    let totalTime = '9:11';
+    
     return (
         <div style={{width: '100%', height: '100%', display: 'flex', overflowY: 'hidden', overflowX: 'hidden'}}>
             <div className='side-column'>
@@ -28,19 +31,19 @@ function Profile() {
                 <div style={{width: '100%', height: '60%', display: 'flex', alignItems: 'center', justifyContent: 'space-around'}}>
                     <div className='data-in-circle-box'>
                         <div className='data-in-circle'>
-                            <Text strong className='plain-text' style={{fontSize: '60px'}} >52</Text>
+                            <Text strong className='plain-text' style={{fontSize: '60px'}} >{passedTestsAmount}</Text>
                         </div>
                         <Text strong className='plain-text data-in-circle-under-text' >Пройдено тестов</Text>
                     </div>
                     <div className='data-in-circle-box'>
                         <div className='data-in-circle'>
-                            <Text strong className='plain-text' style={{fontSize: '60px'}} >69</Text>
+                            <Text strong className='plain-text' style={{fontSize: '60px'}} >{totalScore}</Text>
                         </div>
                         <Text strong className='plain-text data-in-circle-under-text' >Заработано баллов</Text>
                     </div>
                     <div className='data-in-circle-box'>
                         <div className='data-in-circle'>
-                            <Text strong className='plain-text' style={{fontSize: '60px'}} >9:11</Text>
+                            <Text strong className='plain-text' style={{fontSize: '60px'}} >{totalTime}</Text>
                         </div>
                         <Text strong className='plain-text data-in-circle-under-text' >Время тренировок</Text>
                     </div>
