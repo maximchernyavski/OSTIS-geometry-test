@@ -44,7 +44,7 @@ function Theme1 () {
     return (
         <div style={{width: '100%', height: '100%', display: 'flex', overflowX: 'hidden'}}>
             <div className='side-column' style={{backgroundColor: '#D7EEFF', borderRight: '1px solid #84B7EE'}}>
-                <div className='theory-logo-box'>
+                <div className='logo-box' style={{borderBottom: '1px solid #84B7EE'}}>
                     <img src={Logo} alt='OSTIS-geometry logo' className='header-logo' style={{cursor: 'pointer'}} onClick={(() => {navigate('/home')})}></img>
                 </div>
                 <div style={{width: '100%', marginLeft: '5px'}}>

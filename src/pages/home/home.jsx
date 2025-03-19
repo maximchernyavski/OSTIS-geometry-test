@@ -46,6 +46,7 @@ function Home () {
           label: (
             <Text strong className='plain-text' style={{fontSize: '16px'}}>Помощь</Text>
           ),
+          onClick: () => {navigate('/help')},
       },
       {
           key: '6',

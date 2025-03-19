@@ -8,6 +8,7 @@ import SeventhGradeTTP from './pages/theory-tests-problems/seventh-grade/seventh
 import Profile from './pages/profile/profile';
 import Authorization from './pages/authorization/authorization';
 import Home from './pages/home/home';
+import Help from './pages/help/help'
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Route path='/' element={<Authorization />} />
             <Route path='/home' element={<Home />} />
             <Route path='/profile' element={<Profile />} />
+            <Route path='/help' element={<Help />} />
             <Route path='/seven-grade-tests-theory-problems'>
               <Route path='' element={<SeventhGradeTTP />} />
               <Route path='test1' element={<Test1 />} />
