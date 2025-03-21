@@ -1,0 +1,39 @@
+#settings-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-left: 8%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.change-password-button {
+    color: #ECF7FF;
+    background-color: #F46D78;
+    font-size: 16px;
+}
+
+.change-password-button:hover,
+.change-password-button:focus {
+    color: white !important;
+    background-color: #f15865 !important;
+    border-color: transparent !important;
+}
+
+.form-label {
+    font-size: 24px;
+}
+
+.form-input-field {
+    color: #84B7EE;
+    background-color: #ECF7FF;
+    border: 2px solid #84B7EE;
+}
+
+.form-input-field:focus,
+.form-input-field:hover,
+.form-input-field:focus-within {
+    background-color: #ECF7FF;
+}

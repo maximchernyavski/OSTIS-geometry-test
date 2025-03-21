@@ -15,7 +15,7 @@ function SignUp () {
 
     return (
         <Form
-            name='basic'
+            name='sign-up'
             labelCol={{
                 span: 8,
             }}

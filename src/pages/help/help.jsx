@@ -47,28 +47,28 @@ function Help() {
                 </div>
                 <div ref={anchorTargetContainer} style={{width: '100%', overflowY: 'scroll', display: 'flex', flexDirection: 'column', marginLeft: '30px', marginTop: '10px'}}>
                     <div id='ref1'>
-                        <Text className='gradient-text' style={{whiteSpace: 'break-spaces', fontSize: '24px'}}>
+                        <Text strong className='gradient-text' style={{whiteSpace: 'break-spaces', fontSize: '24px'}}>
                             {'1. Какие разделы есть на сайте?\n'}
                         </Text>
-                        <Text className='plain-text !important' style={{whiteSpace: 'break-spaces', fontSize: '20px'}}>
+                        <Text className='plain-text' style={{whiteSpace: 'break-spaces', fontSize: '20px', lineHeight: '22px'}}>
                             {`На платформе есть следующие разделы для обучения геометрии:\n∘ Теория: здесь пользователь может изучить темы (7-11 классов), а также проверить свои знания с помощью тестов и задач.\n∘ Холст: выполняет функции чертёжника, чтобы пользователь мог построить свой собсвенный чертёж для некоторой задачи.`}
                         </Text>
                     </div>
 
                     <div id='ref2'>
-                        <Text className='gradient-text' style={{whiteSpace: 'break-spaces', fontSize: '24px'}}>
+                        <Text strong className='gradient-text' style={{whiteSpace: 'break-spaces', fontSize: '24px'}}>
                             {'2. Какие разделы есть на сайте?\n'}
                         </Text>
-                        <Text className='plain-text !important' style={{whiteSpace: 'break-spaces', fontSize: '20px'}}>
+                        <Text className='plain-text' style={{whiteSpace: 'break-spaces', fontSize: '20px', lineHeight: '22px'}}>
                             {`На платформе есть следующие разделы для обучения геометрии:\n∘ Теория: здесь пользователь может изучить темы (7-11 классов), а также проверить свои знания с помощью тестов и задач.\n∘ Холст: выполняет функции чертёжника, чтобы пользователь мог построить свой собсвенный чертёж для некоторой задачи.`}
                         </Text>
                     </div>
 
                     <div id='ref3'>
-                        <Text className='gradient-text' style={{whiteSpace: 'break-spaces', fontSize: '24px'}}>
+                        <Text strong className='gradient-text' style={{whiteSpace: 'break-spaces', fontSize: '24px'}}>
                             {'3. Какие разделы есть на сайте?\n'}
                         </Text>
-                        <Text className='plain-text !important' style={{whiteSpace: 'break-spaces', fontSize: '20px'}}>
+                        <Text className='plain-text' style={{whiteSpace: 'break-spaces', fontSize: '20px', lineHeight: '22px'}}>
                             {`На платформе есть следующие разделы для обучения геометрии:\n∘ Теория: здесь пользователь может изучить темы (7-11 классов), а также проверить свои знания с помощью тестов и задач.\n∘ Холст: выполняет функции чертёжника, чтобы пользователь мог построить свой собсвенный чертёж для некоторой задачи.`}
                         </Text>
                     </div>
