@@ -1,7 +1,5 @@
 import { ConfigProvider } from 'antd';
 import { BrowserRouter ,Route, Routes } from 'react-router';
-import './App.css';
-import '@fontsource/asap'
 import Test1 from './pages/theory-tests-problems/seventh-grade/tests/test1';
 import Theme1 from './pages/theory-tests-problems/seventh-grade/theory/theme1/theme1-theory';
 import SeventhGradeTTP from './pages/theory-tests-problems/seventh-grade/seventh-grade';
@@ -10,6 +8,7 @@ import Authorization from './pages/authorization/authorization';
 import Home from './pages/home/home';
 import Help from './pages/help/help'
 import Settings from './pages/settings/settings';
+import './App.css';
 
 function App() {
   return (
@@ -37,7 +36,7 @@ function App() {
               },
             },
             token: {
-              fontFamily: 'Asap',
+              fontFamily: 'Trebuchet MS',
             }
           }}
         >
@@ -55,12 +54,6 @@ function App() {
             </Route>
           </Routes>
         </BrowserRouter>
-        {/* <Test1 /> */}
-        {/* < Theme1 /> */}
-        {/* <SeventhGradeTTP /> */}
-        {/* <Profile /> */}
-        {/* <Authorization /> */}
-        {/* <Home /> */}
       </ConfigProvider>
     </div>
   );
