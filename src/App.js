@@ -35,9 +35,6 @@ function App() {
                 colorText: '#45A8FF',
                 fontSize: '20px',
               },
-              Popover: {
-                color: '#84B7EE',
-              }
             },
             token: {
               fontFamily: 'Asap',
