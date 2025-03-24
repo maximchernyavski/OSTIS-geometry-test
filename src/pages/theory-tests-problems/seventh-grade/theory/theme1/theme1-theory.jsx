@@ -5,6 +5,7 @@ import { Typography, Anchor, Button } from 'antd';
 import pic1 from './pic1.png'
 import { TheoryDTPABlock } from '../../../theory-tests-problems';
 import { useNavigate } from 'react-router';
+import ChatButton from '../../../../../components/corner-chat/corner-chat-button';
 const { Text, Paragraph } = Typography;
 
 const navigationMenuItems = [
@@ -176,6 +177,7 @@ function Theme1 () {
                     </Paragraph>
                 </div>
             </div> 
+            <ChatButton />
         </div>
     )
 }

@@ -4,6 +4,7 @@ import '../theory-tests-problems.css';
 import { Tabs ,Typography } from 'antd';
 import { theory, tests, problems } from './seventh-grade-data';
 import { useNavigate } from 'react-router';
+import ChatButton from '../../../components/corner-chat/corner-chat-button';
 const { Text } = Typography
 
 const tabsItems = [
@@ -37,6 +38,7 @@ function SeventhGradeTTP () {
                     <Tabs items={tabsItems} ></Tabs>
                 </div>
             </div>
+            <ChatButton />
         </div>
     )
 }

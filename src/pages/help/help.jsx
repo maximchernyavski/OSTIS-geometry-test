@@ -2,6 +2,7 @@ import { React, useRef } from 'react';
 import { Typography, Anchor } from 'antd'
 import Logo from '../../media/OSTIS-geometry.svg'
 import { useNavigate } from 'react-router';
+import ChatButton from '../../components/corner-chat/corner-chat-button';
 
 const { Text } = Typography
 
@@ -74,6 +75,7 @@ function Help() {
                     </div>
                 </div> 
             </div>
+            <ChatButton />
         </div>
     )
 }

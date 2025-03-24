@@ -1,0 +1,12 @@
+.corner-chat-button {
+    position: absolute;
+    bottom: 2vh;
+    right: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.6vh;
+    width: 5.6vh;
+    border-radius: 10px;
+    background-color: #84B7EE;
+}

@@ -5,6 +5,7 @@ import './home.css'
 import { Avatar, Button, Dropdown, Typography, Divider } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router';
+import ChatButton from '../../components/corner-chat/corner-chat-button';
 const { Text, Paragraph } = Typography
 
 function Home () {
@@ -161,6 +162,7 @@ function Home () {
                 </div>
                 <img src={GeometryPicture} alt='OSTIS geometry placeholder' style={{width: '30%', marginRight: '15px'}}></img>
             </div>
+            <ChatButton />
         </div>
     )
 }

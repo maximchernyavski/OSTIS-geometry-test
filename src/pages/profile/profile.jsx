@@ -4,6 +4,7 @@ import Logo from '../../media/OSTIS-geometry.svg'
 import { Avatar, Typography } from 'antd';
 import { UserOutlined, MailOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router';
+import ChatButton from '../../components/corner-chat/corner-chat-button';
 const { Text } = Typography
 
 function Profile() {
@@ -49,6 +50,7 @@ function Profile() {
                     </div>
                 </div>
             </div>
+            <ChatButton />
         </div>
     )
 }

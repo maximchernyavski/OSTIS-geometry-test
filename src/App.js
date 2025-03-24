@@ -46,7 +46,7 @@ function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/help' element={<Help />} />
-            <Route path = '/settings' element={<Settings />} />
+            <Route path='/settings' element={<Settings />} />
             <Route path='/seven-grade-tests-theory-problems'>
               <Route path='' element={<SeventhGradeTTP />} />
               <Route path='test1' element={<Test1 />} />
