@@ -41,6 +41,7 @@ function Home () {
           label: (
             <Text strong className='plain-text' style={{fontSize: '16px'}}>Настройки</Text>
           ),
+          onClick: () => {navigate('/settings')}
       },
       {
           key: '5',

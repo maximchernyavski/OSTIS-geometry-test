@@ -6,6 +6,14 @@ import ChatButton from '../../components/corner-chat/corner-chat-button';
 
 const { Text } = Typography
 
+function AnchorTitle(props) {
+    return (
+        <div style={{whiteSpace: 'break-spaces'}}>
+            {props.children}
+        </div>
+    );
+}
+
 function Help() {
     const navigate = useNavigate()
     const anchorTargetContainer = useRef()
@@ -13,17 +21,17 @@ function Help() {
     const navigationMenuItems = [
         {
             key: '1',
-            title: '1. Какие разделы есть на платформе?',
+            title: <AnchorTitle>1. Какие разделы есть на платформе?</AnchorTitle>,
             href: '#ref1',
         },
         {
             key: '2',
-            title: '2. Какие разделы есть на платформе?',
+            title: <AnchorTitle>2. Какие разделы есть на платформе?</AnchorTitle>,
             href: '#ref2',
         },
         {
             key: '3',
-            title: '3. Какие разделы есть на платформе?',
+            title: <AnchorTitle>3. Какие разделы есть на платформе?</AnchorTitle>,
             href: '#ref3',
         },
     ];
@@ -39,6 +47,7 @@ function Help() {
                         affix={false}
                         items={navigationMenuItems}
                         getContainer={ () => anchorTargetContainer.current }
+                        style={{fontSize: '5px'}}
                     />
                 </div>
             </div>
@@ -46,8 +55,8 @@ function Help() {
                 <div style={{width: '100%', height: '6.5%', borderBottom: '2px solid #84B7EE'}}>
                     <Text strong className='gradient-text' style={{fontSize: '36px', marginLeft: '15px'}}>Помощь(Часто задаваемые вопросы)</Text>
                 </div>
-                <div ref={anchorTargetContainer} style={{width: '100%', overflowY: 'scroll', display: 'flex', flexDirection: 'column', marginLeft: '30px', marginTop: '10px'}}>
-                    <div id='ref1'>
+                <div ref={anchorTargetContainer} style={{width: '98%', overflowY: 'scroll', display: 'flex', flexDirection: 'column', marginLeft: '30px', marginTop: '10px', scrollbarWidth: 'none'}}>
+                <div id='ref1'>
                         <Text strong className='gradient-text' style={{whiteSpace: 'break-spaces', fontSize: '24px'}}>
                             {'1. Какие разделы есть на сайте?\n'}
                         </Text>
