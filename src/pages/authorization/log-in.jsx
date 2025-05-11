@@ -8,10 +8,10 @@ function LogIn () {
     const onFinish = (values) => {
         console.log('Success:', values);
         navigate('/home')
-      };
-      const onFinishFailed = (errorInfo) => {
+    };
+    const onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);
-      };
+    };
 
     return (
         <Form
