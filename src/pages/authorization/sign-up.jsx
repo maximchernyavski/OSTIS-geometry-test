@@ -1,14 +1,21 @@
 import React from 'react'
 import { Button, Form, Input } from 'antd';
 import { useNavigate } from 'react-router';
+import { createUserAgent } from '../../api/sc/agents/createUserAgent';
 
 function SignUp () {
     const navigate = useNavigate()
 
-    const onFinish = (values) => {
-        console.log('Success:', values);
-        navigate('/home');
+    const onFinish = async (values) => {
+        try {
+            console.log('Success:', values);
+            await createUserAgent(values.username);
+            navigate('/home');
+        } catch (error) {
+            console.error('Error creating user:', error);
+        }
     };
+
     const onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);
     };
